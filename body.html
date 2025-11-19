@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Althea's Mini Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Althea Laurente</h1>
+    <p class="job-title">Aspiring IT Professional | Creative Thinker | Cat Lover</p>
+    <nav>
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="profile" class="profile">
+      <h2>Profile</h2>
+
+<picture>
+  <source media="(max-width: 600px)" srcset="Althea.png">
+  <img src="Althea.png" alt="Portrait of Althea Laurente" class="profile-img">
+</picture>
+
+      <p>Hello! I’m Althea, a 3rd-year BSIT student at TUP Manila. I enjoy blending technology and creativity, especially in web design and UI concepts. Outside tech, I spend time reading, watching legal dramas, and caring for cats.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="card">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive web portfolio showcasing my skills and personal background.</p>
+      </article>
+      <article class="card">
+        <h3>To-Do List App</h3>
+        <p>A simple CRUD web app connected to Firebase for cloud storage.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+      <p id="formResponse"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Althea Laurente | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
